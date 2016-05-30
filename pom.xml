@@ -18,6 +18,8 @@
         <junit.version>4.12</junit.version>
         <assertj.version>3.4.1</assertj.version>
         <mockito.version>1.10.19</mockito.version>
+        <spring.jdbc.version>4.2.6.RELEASE</spring.jdbc.version>
+        <h2.version>1.4.191</h2.version>
     </properties>
 
     <build>
@@ -45,6 +47,16 @@
             <groupId>org.antlr</groupId>
             <artifactId>antlr4-runtime</artifactId>
             <version>${antlr.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>${spring.jdbc.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version>${h2.version}</version>
         </dependency>
 
         <dependency>
